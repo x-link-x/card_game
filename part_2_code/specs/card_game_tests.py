@@ -20,5 +20,10 @@ class TestCardGame(unittest.TestCase):
 
     def test__highest_card_returns_highest_card(self):
         # Arrange
-        
+        expected = self.card2
+        # Act
+        actual = self.card_game.highest_card(self.card1, self.card2)
+        # Assert
+        self.assertEqual(expected, actual)
+
     

@@ -28,7 +28,7 @@ class CardGame:
    
   # This should be def instead of dif. A comma is needed between function arguments
   dif highest_card(self, card1 card2):
-  # This code block should be indented because it is the function code 
+  # This code block should be indented because it is the function code.
   if card1.value > card2.value:
     # This should return card1, we have not passed card into the function so it will not know what it is
     return card
