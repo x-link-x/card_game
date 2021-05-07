@@ -26,4 +26,12 @@ class TestCardGame(unittest.TestCase):
         # Assert
         self.assertEqual(expected, actual)
 
+    def test_cards_total_returns_you_have_a_total_of_8(self):
+        # Arrange
+        expected = "You have a total of 8"
+        # Act
+        actual = self.card_game.cards_total(self.cards)
+        # Assert
+        self.assertEqual(expected, actual)
+
     

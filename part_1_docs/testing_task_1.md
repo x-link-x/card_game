@@ -16,7 +16,6 @@ Only comment on errors that would stop the tests running.
 
 class CardGame:
   
-  # There is no constructor here
 
   def check_for_ace(self, card):
   # This should be the equality operator instead of assignment
@@ -36,13 +35,14 @@ class CardGame:
     return card2
   
 
-
+# This method is an attribute of the class CardGame, so it should be indented
 def cards_total(self, cards):
   # total needs to be assigned a value (0)
   total 
   for card in cards:
     total += card.value
     # The return statement needs to be outside of the for loop, or the loop will only run once then return.
+    # This should be an fstring in order to incorporate total as a variable that has an int value assigned to it
     return "You have a total of" + total
   
 
